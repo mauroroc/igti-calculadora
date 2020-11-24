@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>Super Calculadora</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="center">Super Calculadora</h1>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input autofocus id="inputA" type="number" value="0"/>
+          <label for="inputA" class="active">Primeiro Número (A)</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input id="inputB" type="number" value="0" />
+          <label for="inputB" class="active">Segundo Número (B):</label>
+        </div>
+      </div>
+
+      <h2 class="center">Cálculos</h2>
+
+      <div id="calculations">
+
+        <!-- Linha 1  -->
+        <div class="row">
+
+          <div class="input-field col s4">
+            <input autofocus readonly id="soma" type="number" />
+            <label  for="soma" class="active">Soma (A + B)</label>
+          </div>
+
+          <div class="input-field col s4">
+            <input autofocus readonly id="sub1" type="number" />
+            <label for="sub1" class="active">Subtração 1 (A - B):</label>
+          </div>
+  
+          <div class="input-field col s4">
+            <input autofocus readonly id="sub2" type="number" />
+            <label for="sub2" class="active">Subtração 1 (B - A):</label>
+          </div>
+
+        </div>
+
+        <!-- Linha 2  -->
+        <div class="row">
+
+        <div class="input-field col s4">
+          <input autofocus readonly id="multi" type="number" />
+          <label  for="multi" class="active">Multiplicação (A * B)</label>
+        </div>
+
+        <div class="input-field col s4">
+          <input autofocus readonly id="div1" type="number" />
+          <label for="div1" class="active">Divisão 1 (A / B):</label>
+        </div>
+
+        <div class="input-field col s4">
+          <input autofocus readonly id="div2" type="number" />
+          <label for="div2" class="active">Divisão 2 (B / A):</label>
+        </div>
+
+        </div>
+
+        <!-- Linha 3  -->
+        <div class="row">
+
+          <div class="input-field col s4">
+            <input autofocus readonly id="square1" type="number" />
+            <label  for="square1" class="active">Quadrado de A (A2)</label>
+          </div>
+
+          <div class="input-field col s4">
+            <input autofocus readonly id="square2" type="number" />
+            <label for="square2" class="active">Quadrado de B (B2):</label>
+          </div>
+
+          <div class="input-field col s4">
+            <input autofocus readonly id="div3" type="text" />
+            <label for="div3" class="active">Divisores Inteiros de A:</label>
+          </div>
+
+          </div>
+
+          <!-- Linha 4  -->
+          <div class="row">
+
+            <div class="input-field col s4">
+              <input autofocus readonly id="div4" type="text" />
+              <label  for="div4" class="active">Divisores Inteiros de B:</label>
+            </div>
+
+            <div class="input-field col s4">
+              <input autofocus readonly id="fat1" type="number" />
+              <label for="fat1" class="active">Fatorial de A (A!):</label>
+            </div>
+
+            <div class="input-field col s4">
+              <input autofocus readonly id="fat2" type="number" />
+              <label for="fat2" class="active">Fatorial de B (B!):</label>
+            </div>
+
+            </div>
+
+      </div>
+    </div>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>
